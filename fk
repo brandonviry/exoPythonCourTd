@@ -1,0 +1,67 @@
+import turtle
+def cube( taille , color_1 ,color_2 ,color_3):
+    turtle.down()
+
+    turtle.color(color_1)
+    turtle.begin_fill()
+    for i in range (2):
+        turtle.forward(taille)
+        turtle.right(120)
+        turtle.forward(taille)
+        turtle.right(60)
+    turtle.end_fill()
+
+    #
+
+    turtle.color(color_2)
+
+    turtle.begin_fill()
+    turtle.forward(taille)
+    turtle.left(120)
+    turtle.forward(taille)
+    turtle.left(60)
+    turtle.forward(taille)
+    turtle.left(120)
+    turtle.forward(taille)
+    turtle.end_fill()
+    #
+
+    turtle.color(color_3)
+
+    turtle.begin_fill()
+    turtle.right(60)
+    turtle.forward(taille)
+    turtle.right(120)
+    turtle.forward(taille)
+    turtle.right(60)
+    turtle.forward(taille)
+    turtle.right(120)
+    turtle.forward(taille)
+    turtle.end_fill()
+
+    turtle.color(color_3)
+    turtle.left(60)
+    turtle.up()
+
+    turtle.forward(taille*3)
+coter = 10
+ligne= 2
+def clone(ligne,coter):
+
+    for i in range(ligne):
+      cube(coter,"red","blue","black")
+
+    turtle.goto((coter+(coter/2)),(coter-coter*0.13))
+
+    for i in range(ligne):
+      cube(coter,"red","blue","black")
+
+  
+    turtle.goto(0,(coter*(1.7)))
+clone(ligne,coter)
+clone(ligne,coter)
+clone(ligne,coter)
+
+    
+
+   
