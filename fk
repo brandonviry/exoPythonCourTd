@@ -44,24 +44,23 @@ def cube( taille , color_1 ,color_2 ,color_3):
     turtle.up()
 
     turtle.forward(taille*3)
-coter = 10
+coter = 100
 ligne= 2
-def clone(ligne,coter):
-
+def clone(ligne,coter,fin,bep):
+    turtle.goto(fin,bep)
     for i in range(ligne):
       cube(coter,"red","blue","black")
 
-    turtle.goto((coter+(coter/2)),(coter-coter*0.13))
+    turtle.goto((coter+(coter/2))+bep,(coter-coter*0.13))
 
     for i in range(ligne):
       cube(coter,"red","blue","black")
-
-  
-    turtle.goto(0,(coter*(1.7)))
-clone(ligne,coter)
-clone(ligne,coter)
-clone(ligne,coter)
-
     
 
+    turtle.color("green")
    
+
+  
+    
+clone(ligne,coter,0,0)
+clone(ligne,coter,0,175)
