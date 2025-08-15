@@ -27,7 +27,7 @@ python exoTurtleMultiCube.py
 Aucune dépendance externe requise. Les exercices utilisent uniquement les modules standard Python.
 
 ```bash
-git clone <votre-repo>
+git clone https://github.com/brandonviry/exoPythonCourTd.git
 cd exoPythonCourTd
 python exoUpyLaB_4_7.py
 python exoTurtleMultiCube.py
@@ -35,10 +35,8 @@ python exoTurtleMultiCube.py
 
 ## Structure du projet
 
-- `main.ipynb` - Notebook original avec les exercices
 - `exoUpyLaB_4_7.py` - Exercice de monnaie avec énoncé complet
 - `exoTurtleMultiCube.py` - Exercice turtle avec énoncé complet
-- `requirements.txt` - Fichier de dépendances
 - `README.md` - Cette documentation
 
 ## Corrections apportées
